@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ishika</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            color: green;
+            font-size: 40px;
+            font-weight: bold;
+            width: 100%;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            background-color: black;
+            animation: rainbowText 2s infinite alternate;
+            transition: top 0.5s;
+        }
+
+        @keyframes rainbowText {
+            0% {
+                color: red;
+            }
+            25% {
+                color: yellow;
+            }
+            50% {
+                color: green;
+            }
+            75% {
+                color: blue;
+            }
+            100% {
+                color: red;
+            }
+        }
+
+        /* Container for the bottom images using CSS Grid */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+
+        .image-card {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out; /* Modified animation for images */
+            position: relative;
+        }
+
+        .image-card:hover {
+            transform: rotate(10deg) scale(1.2); /* Adjust rotation and scaling as needed */
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-card .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .image-card:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Happy Birthday Ishika
+    </div>
+		<!-- Image 1 -->
+<div class="image-card" onmouseenter="playAudio('audio1')" onmouseleave="pauseAudio('audio1')">
+    <img src="C:\Users\MIT SHAH\OneDrive\Pictures\Ishika CSS\Ishika11.jpg" alt="Image 1">
+    <div class="overlay">
+        <p>In your eyes, I find verses of beauty that words can't convey. Happy Birthday, my love.</p>
+        <audio id="audio1" autoplay muted>
+            <source src="C:\Users\MIT SHAH\Downloads\Ajab Si (From Om Shanti Om) - KK.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<!-- Image 2 -->
+<div class="image-card" onmouseenter="playAudio('audio2')" onmouseleave="pauseAudio('audio2')">
+    <img src="C:\Users\MIT SHAH\OneDrive\Pictures\Ishika CSS\Ishika 12.jpg" alt="Image 2">
+    <div class="overlay">
+        <p>In life's sweet song, where we belong, Ishika, love's forever strong.</p>
+        <audio id="audio2" autoplay muted>
+            <source src="C:\Users\MIT SHAH\Downloads\BLUE MOON (feat. Teddi Jones) - $NOT.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<!-- Image 3 -->
+<div class="image-card" onmouseenter="playAudio('audio3')" onmouseleave="pauseAudio('audio3')">
+    <img src="C:\Users\MIT SHAH\OneDrive\Pictures\Ishika CSS\Ishika 13.jpg" alt="Image 3">
+    <div class="overlay">
+        <p>I often find myself wondering how I met you, my love, Ishu. How could someone as wonderful as you end up with someone like me?</p>
+        <audio id="audio3" autoplay muted>
+            <source src="C:\Users\MIT SHAH\Downloads\Tumse Milke Dil Ka - Sonu Nigam.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<!-- Image 4 -->
+<div class="image-card" onmouseenter="playAudio('audio4')" onmouseleave="pauseAudio('audio4')">
+    <img src="C:\Users\MIT SHAH\OneDrive\Pictures\Ishika CSS\Ishika 14.jpg" alt="Image 4">
+    <div class="overlay">
+        <p>I apologize for any moments of misery I've caused, you are the most beautiful person, and I'm sorry for ever hurting you. I love you more than words can express, my adorable cutie.</p>
+        <audio id="audio4" autoplay muted>
+            <source src="C:\Users\MIT SHAH\Downloads\Aminé - OKWME.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<!-- Image 5 -->
+<div class="image-card" onmouseenter="playAudio('audio5')" onmouseleave="pauseAudio('audio5')">
+    <img src="C:\Users\MIT SHAH\OneDrive\Pictures\Ishika CSS\Ishika 15.jpg" alt="Image 5">
+    <div class="overlay">
+        <p>Thank you for staying up all night for me, for caring, and for loving me unconditionally, my sweet Bbycakes!</p>
+        <audio id="audio5" autoplay muted>
+            <source src="C:\Users\MIT SHAH\Downloads\Talha Anjum - Desperation.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<!-- Image 6 -->
+<div class="image-card" onmouseenter="playAudio('audio6')" onmouseleave="pauseAudio('audio6')">
+    <img src="C:\Users\MIT SHAH\OneDrive\Pictures\Ishika CSS\Ishika 16.jpg" alt="Image 6">
+    <div class="overlay">
+        <p>I adore you from the bottom of my heart, and your presence and existence mean everything to me. Ishika, you're the only one who can heal my heart, and I'm grateful for having you as my adorable partner and therapist.</p>
+        <audio id="audio6" autoplay muted>
+            <source src="C:\Users\MIT SHAH\Downloads\Lifafa - Laash.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+	
+    <!-- Container for the bottom images -->
+    <div class="image-container">
+        <!-- Image 7 -->
+        <div class="image-card" onmouseenter="playAudio('audio7')" onmouseleave="pauseAudio('audio7')">
+            <img src="C:\Users\MIT SHAH\OneDrive\Pictures\Ishika CSS\Ishika 17.jpg" alt="Image 7">
+            <div class="overlay">
+                <p>I want to marry you and continue going on romantic dates even after we tie the knot. We'll go on treks together, cook together, and support one other in any way we can. I see a bright future with you , thank you for being the light in my life. </p>
+                <audio id="audio7" autoplay muted>
+                    <source src="C:\Users\MIT SHAH\Downloads\13 Aminé - TOGETHER .mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- Image 8 -->
+        <div class="image-card" onmouseenter="playAudio('audio8')" onmouseleave="pauseAudio('audio8')">
+            <img src="C:\Users\MIT SHAH\OneDrive\Pictures\Ishika CSS\Ishika 18.jpg" alt="Image 8">
+            <div class="overlay">
+                <p>I couldn't care less about what people think of us,their opinions will never break the unbreakable link we share, Ishu. I'll always be there for you, regardless of your appearance or demeanour.</p>
+                <audio id="audio8" autoplay muted>
+                    <source src="C:\Users\MIT SHAH\Downloads\Seedhe Maut - Hoshiyaar.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- Image 9 -->
+        <div class="image-card" onmouseenter="playAudio('audio9')" onmouseleave="pauseAudio('audio9')">
+            <img src="C:\Users\MIT SHAH\OneDrive\Pictures\Ishika CSS\Ishika 19.jpg" alt="Image 9">
+            <div class="overlay">
+                <p>I will be by your side forever and always, my love. We are in this journey together, and you are the one I love the most, my dear Bbycakes. Thank you for everything, and I'm endlessly grateful for your presence in my life, Ishu.</p>
+                <audio id="audio9" autoplay muted>
+                    <source src="C:\Users\MIT SHAH\Downloads\KAYTRAMINÉ - 4EVA.mp3"type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+	
+    <script>
+        var currentAudio = null;
+
+        function playAudio(id) {
+            var audio = document.getElementById(id);
+
+            if (currentAudio !== null) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+
+            if (audio) {
+                audio.muted = false; // Unmute the audio
+                audio.play();
+                currentAudio = audio;
+            }
+        }
+
+        function pauseAudio(id) {
+            var audio = document.getElementById(id);
+
+            if (audio) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        }
+    </script>
+</body>
+</html>
